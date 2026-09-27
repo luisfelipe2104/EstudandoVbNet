@@ -121,7 +121,7 @@ Public Class FieldManager
         grid.AllowUserToAddRows = False
         grid.AllowUserToDeleteRows = False
         grid.AllowUserToResizeRows = False
-        grid.ReadOnly = False
+        grid.ReadOnly = True
     End Sub
 
 End Class

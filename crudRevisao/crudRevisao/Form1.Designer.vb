@@ -23,7 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         GridBanqueiro = New DataGridView()
-        btnSalvar = New Button()
+        btnListar = New Button()
+        btnSelecionar = New Button()
         inp_nome = New TextBox()
         btnBuscar = New Button()
         CType(GridBanqueiro, ComponentModel.ISupportInitialize).BeginInit()
@@ -37,14 +38,23 @@ Partial Class Form1
         GridBanqueiro.Size = New Size(776, 244)
         GridBanqueiro.TabIndex = 0
         ' 
-        ' btnSalvar
+        ' btnListar
         ' 
-        btnSalvar.Location = New Point(684, 152)
-        btnSalvar.Name = "btnSalvar"
-        btnSalvar.Size = New Size(75, 23)
-        btnSalvar.TabIndex = 2
-        btnSalvar.Text = "Salvar"
-        btnSalvar.UseVisualStyleBackColor = True
+        btnListar.Location = New Point(588, 152)
+        btnListar.Name = "btnListar"
+        btnListar.Size = New Size(75, 23)
+        btnListar.TabIndex = 1
+        btnListar.Text = "Listar"
+        btnListar.UseVisualStyleBackColor = True
+        ' 
+        ' btnSelecionar
+        ' 
+        btnSelecionar.Location = New Point(669, 152)
+        btnSelecionar.Name = "btnSelecionar"
+        btnSelecionar.Size = New Size(90, 23)
+        btnSelecionar.TabIndex = 2
+        btnSelecionar.Text = "Selecionar"
+        btnSelecionar.UseVisualStyleBackColor = True
         ' 
         ' inp_nome
         ' 
@@ -69,7 +79,8 @@ Partial Class Form1
         ClientSize = New Size(800, 450)
         Controls.Add(btnBuscar)
         Controls.Add(inp_nome)
-        Controls.Add(btnSalvar)
+        Controls.Add(btnSelecionar)
+        Controls.Add(btnListar)
         Controls.Add(GridBanqueiro)
         Name = "Form1"
         Text = "Form1"
@@ -79,7 +90,8 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents GridBanqueiro As DataGridView
-    Friend WithEvents btnSalvar As Button
+    Friend WithEvents btnListar As Button
+    Friend WithEvents btnSelecionar As Button
     Friend WithEvents inp_nome As TextBox
     Friend WithEvents btnBuscar As Button
 
