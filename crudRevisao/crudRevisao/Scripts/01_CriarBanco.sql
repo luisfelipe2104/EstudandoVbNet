@@ -1,0 +1,5 @@
+IF DB_ID('MeuBanco') IS NULL
+BEGIN
+    CREATE DATABASE MeuBanco;
+END
+GO
